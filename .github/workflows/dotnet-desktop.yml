@@ -52,7 +52,7 @@ jobs:
       matrix:
         configuration: [Debug, Release]
 
-    runs-on: ubuntu
+    runs-on: self-hosted
 
     env:
       Solution_Name: WarehouseAssistant.sln                        
