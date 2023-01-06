@@ -25,8 +25,9 @@ jobs:
         fetch-depth: 0
 
     # Execute all unit tests in the solution
-    # - name: Execute unit tests
-    #  run: dotnet test
+    - name: Execute unit tests
+      run: dotnet test
+      working-directory: src/WarehouseAssistant.WebApi.Tests
 
     - name: Restore the application
       run: dotnet restore
