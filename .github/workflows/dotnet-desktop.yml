@@ -16,7 +16,7 @@ jobs:
 
     env:
       Solution_Name: WarehouseAssistant.sln                
-      Test_Project_Path: WarehouseAssistant.WebApi.Tests\WarehouseAssistant.WebApi.Tests.csproj
+      Test_Project_Path: WarehouseAssistant.WebApi.Tests/WarehouseAssistant.WebApi.Tests.csproj
       
     steps:
     - name: Checkout
@@ -31,10 +31,10 @@ jobs:
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application
       run: dotnet restore
-      working-directory: src\WarehouseAssistant.WebApi
+      working-directory: src/WarehouseAssistant.WebApi
       env:
         Configuration: ${{ matrix.configuration }}
         
     - name: Build the application
       run: dotnet build 
-      working-directory: src\WarehouseAssistant.WebApi
+      working-directory: src/WarehouseAssistant.WebApi
