@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Backend\WarehouseAssistant.WebApi.csproj" />
+    <ProjectReference Include="..\WarehouseAssistant.WebApi\WarehouseAssistant.WebApi.csproj" />
   </ItemGroup>
 
 </Project>
